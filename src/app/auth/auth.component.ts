@@ -1,12 +1,12 @@
 import { Component, inject, Input, input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AuthServiceService } from '../services/auth-service.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css',
 })

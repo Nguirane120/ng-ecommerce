@@ -30,6 +30,14 @@ export class AuthServiceService {
     );
   }
 
+  register(name: String, email: String, password: String) {
+    return this.http.post(`${this.url}/register`, {
+      email: email,
+      password: password,
+      name: name,
+    });
+  }
+
   logoutUser() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
