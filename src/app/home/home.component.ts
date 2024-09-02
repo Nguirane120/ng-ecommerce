@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthServiceService } from '../services/auth-service.service';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { ProductComponent } from '../product/product.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, ProductComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
