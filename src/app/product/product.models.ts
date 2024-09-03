@@ -1,3 +1,18 @@
+export interface Cart {
+  status: number;
+  cart: CartElement[];
+}
+
+export interface CartElement {
+  id: number;
+  user_id: string;
+  product_id: number;
+  product_qty: number;
+  created_at: Date;
+  updated_at: Date;
+  product: Product;
+}
+
 export interface Product {
   status: number;
   products: ProductElement[];

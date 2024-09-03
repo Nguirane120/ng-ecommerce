@@ -19,7 +19,7 @@ export class ApiClient {
   }
 
   private getAuthToken(): string | null {
-    return localStorage.getItem('auth_token');
+    return localStorage.getItem('token');
   }
 
   get<T>(endpoint: string): Observable<T> {
